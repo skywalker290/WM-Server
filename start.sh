@@ -1,4 +1,4 @@
-cd ~/WM-Meter/
+cd ~/WM-Server/
 git pull
 
 PID=$(lsof -t -i:5004)
