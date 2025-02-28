@@ -9,5 +9,5 @@ if [ -n "$PID" ]; then
     kill -9 $PID
     echo "Gunicorn server stopped"
 else
-    echo "No Gunicorn process found on port 5003"
+    echo "No Gunicorn process found on port 5004"
 fi
