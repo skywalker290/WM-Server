@@ -53,9 +53,8 @@ def upload_file():
 def inference():
     image_name = request.json.get('image_name')
     image_path = os.path.join('Images', image_name)
-    image_name = "water01.jpeg"
     
-    if image_path:
+    if os.path.exists(image_path):
         reading = gemini(image_path)
         if type(reading) is str:
             return jsonify({"reading": int(reading)}), 200
